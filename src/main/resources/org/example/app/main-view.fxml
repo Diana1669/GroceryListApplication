@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="434.0" maxWidth="420.0" minHeight="317.0" minWidth="288.0" prefHeight="434.0" prefWidth="319.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.app.Controller">
+    <children>
+        <Label alignment="CENTER" prefHeight="26.0" prefWidth="138.0" text="Grocery list" textAlignment="CENTER" textFill="#333333">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Label>
+        <TextField fx:id="product_field" alignment="CENTER" promptText="Enter product" />
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="319.0">
+         <children>
+              <Button fx:id="add_button" defaultButton="true" mnemonicParsing="false" onAction="#buttonAddClick" style="-fx-background-color: #333; -fx-text-fill: #fff; -fx-border-color: #000;" text="Add" textAlignment="CENTER" textFill="#bf5151" />
+            <Button fx:id="clear_button" mnemonicParsing="false" onAction="#buttonClearClick" style="-fx-background-color: #333; -fx-text-fill: #fff; -fx-border-color: #000;" text="Clear" textAlignment="CENTER" textFill="#bf5151" />
+         </children>
+      </HBox>
+        <VBox alignment="CENTER" prefHeight="337.0" prefWidth="319.0" VBox.vgrow="ALWAYS">
+            <children>
+                <ListView fx:id="listView" prefHeight="444.0" prefWidth="319.0" VBox.vgrow="ALWAYS" />
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#buttonDeleteClick" style="-fx-background-color: #333; -fx-border-color: #000; -fx-text-fill: #fff;" text="Delete selected" textAlignment="CENTER" />
+            </children>
+        </VBox>
+    </children>
+</VBox>
